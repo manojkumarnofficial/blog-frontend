@@ -1,8 +1,8 @@
-import React from 'react';
-import './Blog.css';
-import blog from './images/room1.jpg';
-import author from './images/person.jpg';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Blog.css";
+import blog from "./images/room1.jpg";
+import author from "./images/person.jpg";
+import { Link } from "react-router-dom";
 
 function Blog({ blog }) {
   return (
@@ -13,13 +13,9 @@ function Blog({ blog }) {
         <h3 className="blog__title">{blog?.title}</h3>
         <p className="blog__body">{blog?.body}</p>
         <div className="blog__author">
-          <img
-            src={author}
-            alt="Fatima Mujahid"
-            className="blog__authorImage"
-          />
+          <img src={author} alt="Manojkumar" className="blog__authorImage" />
           <div>
-            <h4 className="blog__authorName">Fatima Mujahid</h4>
+            <h4 className="blog__authorName">Manojkumar</h4>
             <p className="blog__date">{blog?.date}</p>
           </div>
         </div>
